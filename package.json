@@ -1,0 +1,11 @@
+{
+  "name": "intranet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hdfm2022/intranet.git",
+  "author": "hdfm2022 <hdfmacedo+git@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}
