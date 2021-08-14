@@ -11,6 +11,17 @@ const app = express();
  * PATCH        => Alterar uma informação específica (somente a senha do usuário, não todo ele)
 */
 
+ /**
+  * Tipos de parametros
+  *  Routes Params => http://localhost:3000/produtos/3/ 
+  *  Querys Params => http://localhost:3000/produtos?name=teclado&max=100000
+  *  Body Params   => {
+  *     "name": "teclado"
+  *    , "description" : "teclado rgb"
+  * }
+  * Usado para post/put/patch. Nunca get/delete.
+  */
+
 app.get("/test", (request, response) => {
     return response.send("Teste GET")
 })
