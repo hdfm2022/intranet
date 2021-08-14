@@ -4,3 +4,4 @@ fast:
 
 atalhos:
  ctrl+j = abrir/fechar terminal
+ ctrl-b = abrir/fechar explorer
