@@ -3,10 +3,10 @@
 # Fluxo
 - 1° server.ts
 - 2° routes.ts
-- 3° Controller
-- 4° Service
-- 5° Repositore 
-- 6° Database
+- 3° Controllers
+- 4° Services
+- 5° Repositores
+- 6° Database (TypeORM)
 ## Regras
 - Geral
     - [ - ] O usuário precisa estar autenticado na aplicação
