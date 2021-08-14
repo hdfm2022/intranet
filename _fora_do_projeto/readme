@@ -1,3 +1,6 @@
 clickup: https://app.clickup.com/3096075/v/dc/2yfgb-43/2yfgb-103
 fast:
  yarn tsc - transforma os .ts em .js
+
+atalhos:
+ ctrl+j = abrir/fechar terminal
