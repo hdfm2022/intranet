@@ -1,0 +1,84 @@
+1
+We are utilizing JavaScript and TypeScript on Node.js as our primary language and runtime, but building on top of technologies such as 
+Kubernetes, RabbitMQ, MongoDB, Redis and Elasticsearch.  
+
+2
+Requisitos
+    Domínio em Node.js + Typescript
+    Domínio do (Git/GitHub)
+    Domínio de REST APIs.
+    Domínio de SQL
+    Experiência com NoSQL.
+    Experiência com testes unitários (Jest)
+    Conhecimento de microservices
+    Conhecimento em design patterns
+
+Para se diferenciar, você precisa de:
+    Conhecimentos em mensageria
+    Experiência com CI/CD
+    Conhecimentos em GCP (Google Cloud Platform)
+    Conhecimentos em Firebase Firestore (NoSQL)
+    Especificação de API com Open API (Swagger)
+
+3
+    Requisitos
+    Ensino superior completo, Ciências da Computação ou áreas relacionadas a TI;
+    Conhecimento pleno ou sênior em Javascript;
+    Conhecimento em HTML, CSS, ReactJS, Git, MySQL;
+    Conhecimento em sistema de filas e mensageria;
+    Experiência em desenvolvimento de e-commerce ou Magento.
+
+4
+    Responsabilidades e atribuições
+
+
+    Implementação e manutenção de API's REST e GraphQL;
+    Desenvolvimento e manutenção de funções serverless (ex.: AWS Lambda e Google Cloud functions);
+    Modelagem e gerenciamento de banco de dados relacional e não-relacional;
+    Outras atribuições poderão ser atribuídas de acordo com o nível de senioridade do candidato;
+
+    É Necessário
+
+    Sólido conhecimento em fundamentos da computação (estruturas de dados e algoritmos);
+    Experiência com desenvolvimento de software em ambiente de produção;
+    Familiaridade com APIs (REST e GraphQL);
+    Experiência com controle de versão (git);
+    Experiência com banco de dados relacional;
+    Experiência ou interesse em arquitetura orientada a eventos;
+
+    Habilidade de trabalhar autonomamente com um time distribuído;
+    Habilidade de comunicação e resolução de problemas;
+    Proatividade e senso de responsabilidade pelas entregas;
+    Leitura e escrita em inglês para documentação e manutenção de código;
+
+    É Desejável
+
+    Conhecimento dos princípios de Clean Code e Design Patterns;
+    Familiaridade com metodologias ágeis;
+    Experiência com banco de dados não-relacional;
+    Experiência com os serviços de provedores de cloud (especialmente AWS).
+
+5
+    Requirements And Skills
+
+    Forte conhecimento de AWS (API Gateway, SQS, SNS, Serverless framework, Lambda, s3, ELK)
+    Forte Experiência com linguagem de programação NodeJS.
+    Experiência com desenvolvimento de arquitetura distribuída.
+    Experiência com desenvolvimento de sistemas.
+    Experiência com programação orientada a funcoes, Design Patterns e programação utilizando chamadas RESTful e JSON.
+    Experiência com serviços de mensageria e filas como rabbitMQ ou Kafka.
+    Experiência com microsserviços, DevOps, Docker e Kubernates”.
+    Experiência com bancos de dados relacionais, SQL e NoSQL.
+    Experiência com TDD, BDD e testes unitários.
+    Conhecimento em plataforma de automação contínua como Jenkins
+
+    Additional information
+
+    Ser referência técnica para o time;
+    Vivencia em frameworks ágeis;
+    Raciocínio lógico;
+    Flexibilidade e fácil adaptação;
+    Colaborativo e com facilidade para trabalhar em equipe;
+    Disseminar o conhecimento com a equipe;
+    Habilidades para lidar com pessoas diversas, ter muita empatia e ser resiliente;
+    Desejo em trabalhar com inovação na área de saúde.
