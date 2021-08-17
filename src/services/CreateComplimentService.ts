@@ -11,10 +11,8 @@ interface IComplimentRequest {
 }
 
 class CreateComplimentService {
-    async execute({ compliment_type_id, user_sender, user_receiver, message }: IComplimentRequest) {
-        const complimentsRepositories = getCustomRepository(ComplimentsRepositories)
+    async validate( { compliment_type_id, user_sender, user_receiver, message }: IComplimentRequest ) {
         const usersRepositories = getCustomRepository(UsersRepositories);
-
         const validationErrors = [];
 
         if (!message) {
@@ -33,6 +31,12 @@ class CreateComplimentService {
         if (validationErrors.length > 0) {
             throw new ValidationError(validationErrors);
         }
+    }
+
+    async execute({ compliment_type_id, user_sender, user_receiver, message }: IComplimentRequest) {
+        const complimentsRepositories = getCustomRepository(ComplimentsRepositories)
+
+        await this.validate({ compliment_type_id, user_sender, user_receiver, message })
 
         const compliment = complimentsRepositories.create({
             compliment_type_id,
@@ -40,7 +44,6 @@ class CreateComplimentService {
             user_receiver,
             message,
         })
-
 
         await complimentsRepositories.save(compliment);
 
