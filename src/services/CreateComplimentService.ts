@@ -1,4 +1,5 @@
 import { getCustomRepository } from "typeorm";
+import { ValidationError } from "../errors/ValidationError";
 import { ComplimentsRepositories } from "../repositories/ComplimentsRepositories";
 import { UsersRepositories } from "../repositories/UsersRepositories";
 
@@ -14,17 +15,23 @@ class CreateComplimentService {
         const complimentsRepositories = getCustomRepository(ComplimentsRepositories)
         const usersRepositories = getCustomRepository(UsersRepositories);
 
+        const validationErrors = [];
+
         if (!message) {
-            throw new Error("Missing message")
+            validationErrors.push( {"data": "message", "problem": "missing"} )
         }
 
         if (user_receiver === user_sender) {
-            throw new Error("User Receiver Cant Be Equals to User Sender")
+            validationErrors.push( {"data": "user_receiver", "problem": "equals", "data2": "user_sender"} )
         }
 
         const userReceiverExists = await usersRepositories.findOne(user_receiver)
         if (!userReceiverExists) {
-            throw new Error("User Receiver Invalid")
+            validationErrors.push( {"data": "user_receiver", "problem": "does_not_exist"} )
+        }
+
+        if (validationErrors.length > 0) {
+            throw new ValidationError(validationErrors);
         }
 
         const compliment = complimentsRepositories.create({
