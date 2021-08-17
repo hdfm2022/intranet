@@ -14,6 +14,10 @@ class CreateComplimentService {
         const complimentsRepositories = getCustomRepository(ComplimentsRepositories)
         const usersRepositories = getCustomRepository(UsersRepositories);
 
+        if (!message) {
+            throw new Error("Missing message")
+        }
+
         if (user_receiver === user_sender) {
             throw new Error("User Receiver Cant Be Equals to User Sender")
         }
