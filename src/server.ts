@@ -21,9 +21,6 @@ app.use((err:Error, request:Request, response:Response, next:NextFunction) => {
     }
 
     if(err instanceof Error) {
-
-        
-
         return response.status(400).json({error: err.message})
     }
 
@@ -33,9 +30,9 @@ app.use((err:Error, request:Request, response:Response, next:NextFunction) => {
     })
 });
 
-const httpPort = 3000;
+const httpPort = process.env.PORT || 3000;
 app.listen(httpPort, () => {
     console.clear()
-    console.log("Commbox Intranet Server is running")
-    console.log("HTTP Port "+httpPort+"")
+    console.log("⚡️ Commbox Intranet Server is running")
+    console.log("⚡️ HTTP Port "+httpPort+"")
 });
