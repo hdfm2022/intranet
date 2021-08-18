@@ -14,6 +14,7 @@ const createComplimentTypeController = new CreateComplimentTypeController()
 const autenthicateUserController = new AuthenticatenUserController()
 const createComplimentController = new CreateComplimentController()
 
+router.get("/", (request, response) => { response.json({"hello": "Hello World"}) });
 router.post("/users", createUserController.handle);
 router.post("/compliment_types", ensureAdmin, createComplimentTypeController.handle);
 router.post("/compliments", ensureAdmin, createComplimentController.handle);

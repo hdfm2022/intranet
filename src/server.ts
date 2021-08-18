@@ -1,6 +1,6 @@
 import { app } from "./app"
 
-const httpPort = process.env.PORT || 3000;
+const httpPort = process.env.PORT || 4555;
 app.listen(httpPort, () => {
     console.clear()
     console.log("⚡️ Commbox Intranet Server is running")
